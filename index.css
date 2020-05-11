@@ -1,0 +1,53 @@
+.root-element {
+  display: flex;
+}
+
+.small-element {
+  width: 200px;
+  height: 200px;
+  margin-right: 10px;
+  background-color: blue;
+}
+
+.big-element {
+  margin-right: 10px;
+  width: 400px;
+  height: 200px;
+  background-color: red;
+}
+
+/* https://css-tricks.com/css-media-queries/ */
+
+@media all and (min-width: 1050px) {
+  .big-element {
+    order: 4;
+    background-color: yellow;
+  }
+}
+
+@media all and (min-height: 800px) {
+  .big-element {
+    order: 4;
+    background-color: black;
+  }
+}
+
+.img-class {
+  height: 50px;
+  width: 50px;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.text-font {
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+@media all and (max-width: 800px) and (min-height: 800px) {
+  .text-font {
+    display: none;
+  }
+}
